@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE8129CA1C56027C00FA8047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129C91C56027C00FA8047 /* main.m */; };
+		EE8129CD1C56027C00FA8047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129CC1C56027C00FA8047 /* AppDelegate.m */; };
+		EE8129D01C56027C00FA8047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129CF1C56027C00FA8047 /* ViewController.m */; };
+		EE8129D31C56027C00FA8047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8129D11C56027C00FA8047 /* Main.storyboard */; };
+		EE8129D51C56027C00FA8047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8129D41C56027C00FA8047 /* Assets.xcassets */; };
+		EE8129D81C56027C00FA8047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8129D61C56027C00FA8047 /* LaunchScreen.storyboard */; };
+		EE8129E31C56027C00FA8047 /* PainterAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129E21C56027C00FA8047 /* PainterAppTests.m */; };
+		EE8129EE1C56027C00FA8047 /* PainterAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129ED1C56027C00FA8047 /* PainterAppUITests.m */; };
+		EE8129FD1C5608BC00FA8047 /* PointData.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129FC1C5608BC00FA8047 /* PointData.m */; };
+		EE812A001C560B2900FA8047 /* MainPainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8129FF1C560B2900FA8047 /* MainPainterView.m */; };
+		EE812A031C565CEC00FA8047 /* PainterSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE812A021C565CEC00FA8047 /* PainterSetupViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE8129DF1C56027C00FA8047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE8129BD1C56027C00FA8047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8129C41C56027C00FA8047;
+			remoteInfo = PainterApp;
+		};
+		EE8129EA1C56027C00FA8047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE8129BD1C56027C00FA8047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8129C41C56027C00FA8047;
+			remoteInfo = PainterApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE8129C51C56027C00FA8047 /* PainterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PainterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8129C91C56027C00FA8047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE8129CB1C56027C00FA8047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE8129CC1C56027C00FA8047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE8129CE1C56027C00FA8047 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE8129CF1C56027C00FA8047 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE8129D21C56027C00FA8047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE8129D41C56027C00FA8047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE8129D71C56027C00FA8047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE8129D91C56027C00FA8047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8129DE1C56027C00FA8047 /* PainterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PainterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8129E21C56027C00FA8047 /* PainterAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PainterAppTests.m; sourceTree = "<group>"; };
+		EE8129E41C56027C00FA8047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8129E91C56027C00FA8047 /* PainterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PainterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8129ED1C56027C00FA8047 /* PainterAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PainterAppUITests.m; sourceTree = "<group>"; };
+		EE8129EF1C56027C00FA8047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8129FB1C5608BC00FA8047 /* PointData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointData.h; sourceTree = "<group>"; };
+		EE8129FC1C5608BC00FA8047 /* PointData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointData.m; sourceTree = "<group>"; };
+		EE8129FE1C560B2900FA8047 /* MainPainterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPainterView.h; sourceTree = "<group>"; };
+		EE8129FF1C560B2900FA8047 /* MainPainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPainterView.m; sourceTree = "<group>"; };
+		EE812A011C565CEC00FA8047 /* PainterSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainterSetupViewController.h; sourceTree = "<group>"; };
+		EE812A021C565CEC00FA8047 /* PainterSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PainterSetupViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE8129C21C56027C00FA8047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129DB1C56027C00FA8047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129E61C56027C00FA8047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE8129BC1C56027C00FA8047 = {
+			isa = PBXGroup;
+			children = (
+				EE8129C71C56027C00FA8047 /* PainterApp */,
+				EE8129E11C56027C00FA8047 /* PainterAppTests */,
+				EE8129EC1C56027C00FA8047 /* PainterAppUITests */,
+				EE8129C61C56027C00FA8047 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE8129C61C56027C00FA8047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE8129C51C56027C00FA8047 /* PainterApp.app */,
+				EE8129DE1C56027C00FA8047 /* PainterAppTests.xctest */,
+				EE8129E91C56027C00FA8047 /* PainterAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE8129C71C56027C00FA8047 /* PainterApp */ = {
+			isa = PBXGroup;
+			children = (
+				EE8129CB1C56027C00FA8047 /* AppDelegate.h */,
+				EE8129CC1C56027C00FA8047 /* AppDelegate.m */,
+				EE8129CE1C56027C00FA8047 /* ViewController.h */,
+				EE8129CF1C56027C00FA8047 /* ViewController.m */,
+				EE8129D11C56027C00FA8047 /* Main.storyboard */,
+				EE812A011C565CEC00FA8047 /* PainterSetupViewController.h */,
+				EE812A021C565CEC00FA8047 /* PainterSetupViewController.m */,
+				EE8129FB1C5608BC00FA8047 /* PointData.h */,
+				EE8129FC1C5608BC00FA8047 /* PointData.m */,
+				EE8129FE1C560B2900FA8047 /* MainPainterView.h */,
+				EE8129FF1C560B2900FA8047 /* MainPainterView.m */,
+				EE8129D41C56027C00FA8047 /* Assets.xcassets */,
+				EE8129D61C56027C00FA8047 /* LaunchScreen.storyboard */,
+				EE8129D91C56027C00FA8047 /* Info.plist */,
+				EE8129C81C56027C00FA8047 /* Supporting Files */,
+			);
+			path = PainterApp;
+			sourceTree = "<group>";
+		};
+		EE8129C81C56027C00FA8047 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE8129C91C56027C00FA8047 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE8129E11C56027C00FA8047 /* PainterAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE8129E21C56027C00FA8047 /* PainterAppTests.m */,
+				EE8129E41C56027C00FA8047 /* Info.plist */,
+			);
+			path = PainterAppTests;
+			sourceTree = "<group>";
+		};
+		EE8129EC1C56027C00FA8047 /* PainterAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE8129ED1C56027C00FA8047 /* PainterAppUITests.m */,
+				EE8129EF1C56027C00FA8047 /* Info.plist */,
+			);
+			path = PainterAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE8129C41C56027C00FA8047 /* PainterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8129F21C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterApp" */;
+			buildPhases = (
+				EE8129C11C56027C00FA8047 /* Sources */,
+				EE8129C21C56027C00FA8047 /* Frameworks */,
+				EE8129C31C56027C00FA8047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PainterApp;
+			productName = PainterApp;
+			productReference = EE8129C51C56027C00FA8047 /* PainterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE8129DD1C56027C00FA8047 /* PainterAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8129F51C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterAppTests" */;
+			buildPhases = (
+				EE8129DA1C56027C00FA8047 /* Sources */,
+				EE8129DB1C56027C00FA8047 /* Frameworks */,
+				EE8129DC1C56027C00FA8047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE8129E01C56027C00FA8047 /* PBXTargetDependency */,
+			);
+			name = PainterAppTests;
+			productName = PainterAppTests;
+			productReference = EE8129DE1C56027C00FA8047 /* PainterAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE8129E81C56027C00FA8047 /* PainterAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8129F81C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterAppUITests" */;
+			buildPhases = (
+				EE8129E51C56027C00FA8047 /* Sources */,
+				EE8129E61C56027C00FA8047 /* Frameworks */,
+				EE8129E71C56027C00FA8047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE8129EB1C56027C00FA8047 /* PBXTargetDependency */,
+			);
+			name = PainterAppUITests;
+			productName = PainterAppUITests;
+			productReference = EE8129E91C56027C00FA8047 /* PainterAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE8129BD1C56027C00FA8047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = yong;
+				TargetAttributes = {
+					EE8129C41C56027C00FA8047 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EE8129DD1C56027C00FA8047 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EE8129C41C56027C00FA8047;
+					};
+					EE8129E81C56027C00FA8047 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EE8129C41C56027C00FA8047;
+					};
+				};
+			};
+			buildConfigurationList = EE8129C01C56027C00FA8047 /* Build configuration list for PBXProject "PainterApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE8129BC1C56027C00FA8047;
+			productRefGroup = EE8129C61C56027C00FA8047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE8129C41C56027C00FA8047 /* PainterApp */,
+				EE8129DD1C56027C00FA8047 /* PainterAppTests */,
+				EE8129E81C56027C00FA8047 /* PainterAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE8129C31C56027C00FA8047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8129D81C56027C00FA8047 /* LaunchScreen.storyboard in Resources */,
+				EE8129D51C56027C00FA8047 /* Assets.xcassets in Resources */,
+				EE8129D31C56027C00FA8047 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129DC1C56027C00FA8047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129E71C56027C00FA8047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE8129C11C56027C00FA8047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE812A031C565CEC00FA8047 /* PainterSetupViewController.m in Sources */,
+				EE8129D01C56027C00FA8047 /* ViewController.m in Sources */,
+				EE8129CD1C56027C00FA8047 /* AppDelegate.m in Sources */,
+				EE8129FD1C5608BC00FA8047 /* PointData.m in Sources */,
+				EE812A001C560B2900FA8047 /* MainPainterView.m in Sources */,
+				EE8129CA1C56027C00FA8047 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129DA1C56027C00FA8047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8129E31C56027C00FA8047 /* PainterAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8129E51C56027C00FA8047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8129EE1C56027C00FA8047 /* PainterAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE8129E01C56027C00FA8047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE8129C41C56027C00FA8047 /* PainterApp */;
+			targetProxy = EE8129DF1C56027C00FA8047 /* PBXContainerItemProxy */;
+		};
+		EE8129EB1C56027C00FA8047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE8129C41C56027C00FA8047 /* PainterApp */;
+			targetProxy = EE8129EA1C56027C00FA8047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE8129D11C56027C00FA8047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE8129D21C56027C00FA8047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE8129D61C56027C00FA8047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE8129D71C56027C00FA8047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE8129F01C56027C00FA8047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE8129F11C56027C00FA8047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE8129F31C56027C00FA8047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PainterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE8129F41C56027C00FA8047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PainterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE8129F61C56027C00FA8047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PainterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PainterApp.app/PainterApp";
+			};
+			name = Debug;
+		};
+		EE8129F71C56027C00FA8047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PainterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PainterApp.app/PainterApp";
+			};
+			name = Release;
+		};
+		EE8129F91C56027C00FA8047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PainterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PainterApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE8129FA1C56027C00FA8047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PainterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yong.PainterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PainterApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE8129C01C56027C00FA8047 /* Build configuration list for PBXProject "PainterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8129F01C56027C00FA8047 /* Debug */,
+				EE8129F11C56027C00FA8047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8129F21C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8129F31C56027C00FA8047 /* Debug */,
+				EE8129F41C56027C00FA8047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8129F51C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8129F61C56027C00FA8047 /* Debug */,
+				EE8129F71C56027C00FA8047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8129F81C56027C00FA8047 /* Build configuration list for PBXNativeTarget "PainterAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8129F91C56027C00FA8047 /* Debug */,
+				EE8129FA1C56027C00FA8047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE8129BD1C56027C00FA8047 /* Project object */;
+}

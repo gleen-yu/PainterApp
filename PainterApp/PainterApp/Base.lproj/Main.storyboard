@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main Painter View" customClass="MainPainterView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EdD-VK-9aZ">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Pen" id="G9V-BZ-G9o">
+                                        <connections>
+                                            <action selector="PenClick" destination="BYZ-38-t0r" id="NUJ-HS-qPu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Line" id="A79-6t-NPY">
+                                        <connections>
+                                            <action selector="LineClick" destination="BYZ-38-t0r" id="NKa-Bq-7iE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Circle" id="pLe-AO-no0">
+                                        <connections>
+                                            <action selector="CircleClick" destination="BYZ-38-t0r" id="0I1-Lx-Tr2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Rectangle" id="G7h-yc-isa">
+                                        <connections>
+                                            <action selector="RectangleClick" destination="BYZ-38-t0r" id="d6z-jL-kkA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Erase" id="eWZ-7g-pR0">
+                                        <connections>
+                                            <action selector="EraseClick" destination="BYZ-38-t0r" id="ulE-Q5-ePh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="설정" id="ndi-2f-lUA">
+                                        <connections>
+                                            <action selector="SetupClick" destination="BYZ-38-t0r" id="hfY-6i-GfJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--PainterSetupViewController-->
+        <scene sceneID="WCV-2a-HOb">
+            <objects>
+                <viewController storyboardIdentifier="PainterSetupViewController" id="SvP-dB-n3j" userLabel="PainterSetupViewController" customClass="PainterSetupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TNh-ge-2nF"/>
+                        <viewControllerLayoutGuide type="bottom" id="VKx-ri-neW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G52-tw-Jn6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e1p-TK-4zu" userLabel="Green">
+                                <rect key="frame" x="71" y="157" width="231" height="31"/>
+                                <connections>
+                                    <action selector="ValueChange:" destination="SvP-dB-n3j" eventType="valueChanged" id="zb6-Ox-OcN"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mzN-UI-IpA" userLabel="Blue">
+                                <rect key="frame" x="71" y="206" width="231" height="31"/>
+                                <connections>
+                                    <action selector="ValueChange:" destination="SvP-dB-n3j" eventType="valueChanged" id="8Zl-c9-WLW"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InS-GF-E6d">
+                                <rect key="frame" x="20" y="244" width="280" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yj7-Sk-SHP" userLabel="Line width UISlider">
+                                <rect key="frame" x="18" y="377" width="284" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwb-ca-Xr4">
+                                <rect key="frame" x="123" y="66" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Line 넓이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKq-bb-3N3">
+                                <rect key="frame" x="127" y="341" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjp-gG-VeE">
+                                <rect key="frame" x="145" y="488" width="30" height="30"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushBackClick" destination="SvP-dB-n3j" eventType="touchUpInside" id="KpA-WJ-dtx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrY-96-w8R">
+                                <rect key="frame" x="20" y="109" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-KL-2aR">
+                                <rect key="frame" x="20" y="161" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ot-ol-n6Y">
+                                <rect key="frame" x="20" y="210" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UBO-Jy-t3D" userLabel="Red">
+                                <rect key="frame" x="71" y="105" width="231" height="31"/>
+                                <connections>
+                                    <action selector="ValueChange:" destination="SvP-dB-n3j" eventType="valueChanged" id="q9Z-7v-204"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blueBar" destination="mzN-UI-IpA" id="5mg-nD-pLL"/>
+                        <outlet property="colorPreView" destination="InS-GF-E6d" id="com-fX-wYO"/>
+                        <outlet property="greenBar" destination="e1p-TK-4zu" id="V0B-EY-23z"/>
+                        <outlet property="redBar" destination="UBO-Jy-t3D" id="8hg-kV-kD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRY-AF-HlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="441"/>
+        </scene>
+    </scenes>
+</document>
